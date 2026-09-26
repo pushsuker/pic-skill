@@ -1,0 +1,14 @@
+{
+  "name": "bpes-competition-reference", "private": true, "version": "1.0.0",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "install:all": "npm ci --prefix backend && npm ci --prefix frontend",
+    "configure": "node backend/scripts/configure.js",
+    "db:setup": "node backend/scripts/setup.js",
+    "dev:backend": "node --watch backend/server.js",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "node backend/server.js",
+    "test": "node backend/tests/period-dates.js && node backend/tests/integration.js"
+  }
+}

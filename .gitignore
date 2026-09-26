@@ -1,0 +1,8 @@
+node_modules/
+backend/.env
+backend/storage/
+dist/
+evidence/
+*.log
+backend/restores/
+backups/
